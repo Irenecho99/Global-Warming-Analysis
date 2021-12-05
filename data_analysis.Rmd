@@ -1,0 +1,32 @@
+#read the file into R
+```{r}
+file <- read.csv("/Users/irenecho/Desktop/final.csv", header = T)
+head(file)
+```
+
+#set v2 to years column
+```{r}
+file$V2 <- substr(file$V2, 1,nchar(file$V2)-4)
+file$V2 <- as.numeric(file$V2)
+head(file)
+```
+
+#change column names
+```{r}
+colnames(file) <- c('station_id', 'year', 'TOBS', 'TMAX', 'TMIN', 'PRCP', 'SNOW', 'SNWD', 'totalMean', 'previous_temp')
+```
+
+#find if the temperature rose compare to the last year [TOBS, TMAX, TMIN]
+```{r}
+file$TOBS_is_overheated = ifelse(file$TOBS> file$previous_temp, 1, 0)
+
+file$TMAX_is_overheated = ifelse(file$TMAX> file$previous_temp, 1, 0)
+
+file$TMIN_is_overheated = ifelse(file$TMIN> file$previous_temp, 1, 0)
+
+```
+
+```{r}
+head(file)
+```
+
