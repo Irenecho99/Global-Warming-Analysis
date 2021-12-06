@@ -17,11 +17,11 @@ Global Warming Analysis
 1. Upload separated files into CHTC. (/) 
 2. Create .sub file and .sh to download each file and use R to calculate average temperature for each file. (/) 
 3. Merge all processed files into one dataset and upload on GitHub. (/)
-4. Create new column called "is_overheat" labeled as 0 and 1 by comparing TOBS to the previous year avg temperature. ()
-5. Perform data analysis and model the data (Binary logistic regression). ()
-6. Write a first draft report. ()
+4. Create new column called "is_overheat" labeled as 0 and 1 by comparing TOBS to the previous year avg temperature. (/)
+5. Perform data analysis and model the data (Binary logistic regression). (/)
+6. Write a first draft report. (...)
 
 == Plan after first draft presentation ==
 
-7. Increase the scale of data (maybe to a hundred years files) ()
-8. Get an output by using the same procedures and write the final report. () 
+7. Increase the scale of data (to 70 files) ()
+8. Get an output by using the same procedures and modify the draft to the final report. () 
