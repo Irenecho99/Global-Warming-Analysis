@@ -33,15 +33,12 @@ fun_converter <- function(x) {
 file = fun_converter(file)
 ```
 
-# binary: find if the temperature has risen compare to the last year [TOBS, TMAX, TMIN]
+# binary: find if the temperature has risen compare to the last year [TOBS]
 ```{r}
 file <- na.omit(file)
 
 file$TOBS_is_overheated = ifelse(file$TOBS> file$prev_temp, 1, 0)
 
-file$TMAX_is_overheated = ifelse(file$TMAX> file$prev_temp, 1, 0)
-
-file$TMIN_is_overheated = ifelse(file$TMIN> file$prev_temp, 1, 0)
 ```
 
 ```{r}
