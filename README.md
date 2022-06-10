@@ -1,7 +1,14 @@
 # Stat605-Final-Project
 UW-Madison Stat605 Final Project
 
-Global Warming Analysis
+# Contributors:
+1. Kyungjin Cho
+2. Samach Sathitvudh
+3. Sheng Huang
+4. Shravan Kaul
+5. Midhun Satheesh
+
+# Global Warming Analysis
 
 == To do list ==
 - Separately download files -> .sub file + .sh file.
